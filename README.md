@@ -2,7 +2,7 @@
 
 ![Example gif](img/example.gif)
 
-Fun visualiser using Barry Martin Hop Along fractals (using [this document](https://www.jolinton.co.uk/Mathematics/Hopalong_Fractals/Text.pdf) as a reference).
+Fun visualiser for Barry Martin Hop Along fractals (using [this document](https://www.jolinton.co.uk/Mathematics/Hopalong_Fractals/Text.pdf) as a reference).
 Iterations calculated with `numba`, and rendered using `matplotlib`.
 
 ## Setup

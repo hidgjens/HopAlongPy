@@ -22,6 +22,12 @@ def hop_along_eq(xy: npt.NDArray, a: float, b: float, c: float) -> npt.NDArray:
     """
     Complete 1 iteration of the hop along equation.
 
+    Used https://www.jolinton.co.uk/Mathematics/Hopalong_Fractals/Text.pdf
+    as a reference.
+
+    x' = y + f(x) where f(x) = -SGN(x)*sqrt(|bx-c|)
+    y' = a - x
+    
     Args:
         xy (npt.NDArray): Initial coordiates to iterate on.
         a (float): Hop along parameter.
