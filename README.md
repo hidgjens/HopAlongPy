@@ -3,6 +3,7 @@
 ![Example gif](img/example.gif)
 
 Fun visualiser using Barry Martin Hop Along fractals (using [this document](https://www.jolinton.co.uk/Mathematics/Hopalong_Fractals/Text.pdf) as a reference).
+Iterations calculated with `numba`, and rendered using `matplotlib`.
 
 ## Setup
 
@@ -61,4 +62,4 @@ Defaults to 25 fps for cinematic experience although my PC can only handle about
 ![Example6](img/example6.png)
 ![Example7](img/example7.png)
 ![Example8](img/example8.png)
-![Example9](img/example7.png)
+![Example9](img/example9.png)
