@@ -62,7 +62,8 @@ def hop_along_for_n(
     Calculate `n_iters` iterations of the hop along equations for parameters (a,b,c).
 
     Use this function to generate a sample of iterations for a set of parameters.
-    By default, this function uses (0,0) for initial conditions, but this can be ov
+    By default, this function uses (0,0) for initial conditions, but this can be
+    overridden by setting `xy_init`.
 
     Args:
         a (float):
@@ -73,7 +74,7 @@ def hop_along_for_n(
             Hop along parameter.
         n_iters (int):
             Number of iterations to calculate.
-        xy_init (float, optional):
+        xy_init (NDArray, optional):
             Initial conditions for the iteration. Defaults to (0,0).
 
     Returns:
