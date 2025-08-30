@@ -27,7 +27,7 @@ def hop_along_eq(xy: npt.NDArray, a: float, b: float, c: float) -> npt.NDArray:
 
     x' = y + f(x) where f(x) = -SGN(x)*sqrt(|bx-c|)
     y' = a - x
-    
+
     Args:
         xy (npt.NDArray): Initial coordiates to iterate on.
         a (float): Hop along parameter.
@@ -38,8 +38,8 @@ def hop_along_eq(xy: npt.NDArray, a: float, b: float, c: float) -> npt.NDArray:
         npt.NDArray: The resulting coordinate from the iteration.
     """
     sqrt_x = np.sqrt(np.abs(b * xy[0] - c))
-    
-    f_x = -np.copysign(sqrt_x, xy[0]) # Classic BM
+
+    f_x = -np.copysign(sqrt_x, xy[0])  # Classic BM
     # f_x = +np.copysign(sqrt_x, xy[0]) # Positive BM, also cool
     # f_x = sqrt_x # Additive, not bad
     # f_x = np.sin(b*xy[0] - c) # Sinusoidal, pretty interesting
@@ -203,15 +203,16 @@ def plot_hop_along(
             values = np.swapaxes(values, 0, 1)
             a, b, c = random_abc()
 
+
 def _main() -> None:
     import argparse
 
     parser = argparse.ArgumentParser(
-        description="Run hog along visualiser", 
+        description="Run hog along visualiser",
         epilog=(
             "`nreset=1 creates very chaotic (and cool) visuals. "
             "Larger numbers (e.g. 10) creates more stable structures."
-        )
+        ),
     )
 
     parser.add_argument(
@@ -235,7 +236,8 @@ def _main() -> None:
         type=int,
         help=(
             "number of frames generated before parameters are randomised, "
-            "setting to zero keeps the same parameters throughout (default 10)"),
+            "setting to zero keeps the same parameters throughout (default 10)"
+        ),
     )
     parser.add_argument(
         "--fps",
