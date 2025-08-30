@@ -6,12 +6,13 @@ Hop along fun.
 
 from __future__ import annotations
 
+from typing import Optional
+
+import matplotlib
+import matplotlib.pyplot as plt
 import numba as nb
 import numpy as np
 import numpy.typing as npt
-import matplotlib.pyplot as plt
-import matplotlib
-from typing import Optional
 
 
 DEBUG = False
