@@ -109,6 +109,7 @@ def random_abc(
     Returns:
         tuple[float, float, float]: The generated parameters.
     """
+    # TODO handle bad parameters.
     return tuple(np.random.uniform(min_val, max_val) for _ in range(3))  # type: ignore
 
 
@@ -216,6 +217,8 @@ def _main() -> None:
             "Larger numbers (e.g. 10) creates more stable structures."
         ),
     )
+
+    # TODO handle bad inputs.
 
     parser.add_argument(
         "--niters",
