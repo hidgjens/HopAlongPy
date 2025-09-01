@@ -132,7 +132,7 @@ def plot_hop_along(
     with their alpha decreasing linearly with each update.
     A new update will be calcualted every 0.04s (25 fps).
 
-    There's is currently no way to make this return so good luck.
+    There is currently no way to make this return so good luck.
 
     Args:
         a (float):
@@ -212,7 +212,7 @@ def _main() -> None:
     parser = argparse.ArgumentParser(
         description="Run hop along visualiser",
         epilog=(
-            "`nreset=1 creates very chaotic (and cool) visuals. "
+            "`--nreset 1` creates a very chaotic (but cool) visual effect. "
             "Larger numbers (e.g. 10) creates more stable structures."
         ),
     )
